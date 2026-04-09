@@ -1,0 +1,18 @@
+[package]
+name = "ycd_animation_extractor"
+version = "1.0.0"
+edition = "2021"
+description = "Extract clip/animation names from GTA V .ycd files (Rust port of ycd-scanner)"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/orel56000/YcdAnimationExtractor"
+keywords = ["gta5", "ycd", "clip-dictionary", "animations"]
+categories = ["command-line-utilities", "parser-implementations"]
+default-run = "ycd_animation_extractor"
+
+[dependencies]
+anyhow = "1"
+flate2 = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+walkdir = "2"
